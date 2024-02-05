@@ -1,15 +1,15 @@
 import Input from '@components/Input/Input';
 import Button from '@components/Input/Button/Button';
-import './SignupPage.css';
+import './LoginPage.css';
 
-const SignupPage = () => {
+const LoginPage = () => {
   return (
-    <form className='signup'>
+    <form className='login'>
       <Input>Логин</Input>
       <Input type='password'>Пароль</Input>
-      <Button>Зарегистрироваться</Button>
+      <Button>Войти</Button>
     </form>
   )
 }
 
-export default SignupPage;
+export default LoginPage;
