@@ -1,9 +1,12 @@
 .main-page {
   height: 100%;
-  max-width: 40%;
-  display: flex;
+  max-width: 80%;
+  margin: 1em auto;
+}
+.main-page__link-transform {
+  max-width: 60%;
   margin: auto;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+}
+.main-page__links {
+  margin-top: 2em;
 }

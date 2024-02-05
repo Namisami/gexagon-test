@@ -10,6 +10,9 @@ const MainPage = () => {
         <Input placeholder='Введите полную ссылку'>Полная ссылка</Input>
         <Button>Применить</Button>
       </Form>
+      <section className='main-page__links'>
+        <h1>Список ссылок</h1>
+      </section>
     </div>
   )
 }
