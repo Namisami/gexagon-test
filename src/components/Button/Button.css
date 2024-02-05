@@ -4,4 +4,8 @@
   color: whitesmoke;
   padding: 1em 1.5em;
   border-radius: 5px;
+  transition: background-color 0.2s;
+}
+.button:hover {
+  background-color: rgba(2, 80, 215, 0.642);
 }

@@ -1,7 +1,7 @@
 import Input from '@components/Input/Input';
-import Button from '@components/Input/Button/Button';
+import Button from '@components/Button/Button';
 import './LoginPage.css';
-import Form from '@components/Input/Form/Form';
+import Form from '@components/Form/Form';
 
 const LoginPage = () => {
   return (

@@ -1,6 +1,6 @@
 import Input from '@components/Input/Input';
-import Button from '@components/Input/Button/Button';
-import Form from '@components/Input/Form/Form';
+import Button from '@components/Button/Button';
+import Form from '@components/Form/Form';
 import './MainPage.css';
 
 const MainPage = () => {
