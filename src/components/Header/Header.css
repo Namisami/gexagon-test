@@ -1,4 +1,5 @@
 .header {
+  flex: none;
   height: 70px;
   background-color: rgba(0, 94, 255, 0.642);
   color: whitesmoke;
