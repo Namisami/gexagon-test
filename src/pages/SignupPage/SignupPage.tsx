@@ -14,8 +14,8 @@ const SignupPage = () => {
   const [error, setError] = useState('');
 
   const register = async (e: React.FormEvent) => {
-    setError('');
     e.preventDefault();
+    setError('');
     await axiosInstance
       .post('/api/register', null, {
         params: {
@@ -30,10 +30,10 @@ const SignupPage = () => {
     <>
       <Header />
       <div className="signup">
+        { error && 
+          <p>Ошибка</p>
+        }
         <Form onFormSubmit={ register }>
-          { error && 
-            <p>Ошибка</p>
-          }
           <Input onInputChange={ (e) => setState({...state, username: e.target.value}) }>Логин</Input>
           <Input type='password' onInputChange={ (e) => setState({...state, password: e.target.value}) }>Пароль</Input>
           <Button>Зарегистрироваться</Button>
