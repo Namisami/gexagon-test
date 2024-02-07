@@ -26,7 +26,8 @@
       "@components/*": ["./components/*"],
       "@pages/*": ["./pages/*"],
       "@assets/*": ["./assets/*"],
-      "@routers/*": ["./routers/*"]
+      "@routers/*": ["./routers/*"],
+      "@api/*": ["./api/*"]
     }
   },
   "include": ["src"],
