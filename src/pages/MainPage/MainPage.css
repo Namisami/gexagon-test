@@ -36,6 +36,7 @@
   width: 100%;
 }
 .table__link {
+  cursor: pointer;
   display: block;
   width: 100%;
   text-overflow: ellipsis;

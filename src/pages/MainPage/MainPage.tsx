@@ -88,6 +88,11 @@ const MainPage = () => {
     return setTableData({...tableData, order: 'asc_counter'})
   }
 
+  const copyByClick = (e: React.MouseEvent<HTMLElement>) => {
+    const element = e.target as HTMLElement;
+    navigator.clipboard.writeText(element.innerText);
+  }
+
   return (
     <>
       <Header />
@@ -115,14 +120,14 @@ const MainPage = () => {
               return (
                 <React.Fragment key={ item.id }>
                   <div className="table__ceil table__short">
-                    <a href={ `https://front-test.hex.team/s/${item.short}` } className="table__link">
+                    <p className="table__link" onClick={ copyByClick }>
                       { `https://front-test.hex.team/s/${item.short}` }
-                    </a>
+                    </p>
                   </div>
                   <div className="table__ceil table__initial">
-                    <a className="table__link" href={ item.target }>
+                    <p className="table__link" onClick={ copyByClick }>
                       { item.target }
-                    </a>
+                    </p>
                   </div>
                   <div className="table__ceil table__count">{ item.counter }</div>
                 </React.Fragment>
