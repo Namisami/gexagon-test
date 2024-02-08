@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useNavigate } from "react-router-dom";
 import Input from '@components/Input/Input';
 import Button from '@components/Button/Button';
 import Form from '@components/Form/Form';
@@ -13,6 +14,8 @@ const SignupPage = () => {
   });
   const [error, setError] = useState('');
 
+  const navigate = useNavigate();
+
   const register = async (e: React.FormEvent) => {
     e.preventDefault();
     setError('');
@@ -23,6 +26,7 @@ const SignupPage = () => {
           password: state.password,
         }
       })
+      .then(() => navigate('/login'))
       .catch((err) => setError(err))
   };
 
