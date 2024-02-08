@@ -1,6 +1,6 @@
 # Инструкция по запуску
-npm clone https://github.com/Namisami/gexagon-test
-npm install
-npm run dev
+1. npm clone https://github.com/Namisami/gexagon-test
+2. npm install
+3. npm run dev
 # Примечания
 В проекте также реализовано копирование ссылок по нажатию на них
